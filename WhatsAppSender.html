@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>WaSender</title>
+  </head>
+  <body>
+    <h1>WhatsApp Sender</h1>
+    <div class="content">
+      <a
+        href="./whatsapp sender.xlsx"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span>1. הורד קובץ אקסל מצ"ב ומלא את הפרטים</span>
+      </a>
+    </div>
+    <div id="drag" class="content drag">2. גרור הנה קובץ אקסל מוכן</div>
+
+    <div class="content">
+      <div id="upload" onclick="createLink()">3. התחל שליחה!</div>
+    </div>
+    <div>שימ.י לב!</div>
+    <div class="content">
+      במידה ומופיע החלון הנ"ל אחרי שליחה, יש ללחוץ עליו, להתיר חלונות קופצים
+      לאתר זה, וללחוץ שוב על שליחה.
+      <img src="./popuphelper.jpeg" />
+    </div>
+
+    <div id="phones" style="font-size: 3vw"></div>
+  </body>
+  <script src="app.js"></script>
+</html>
